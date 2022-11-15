@@ -10,7 +10,7 @@ public class TesteDesconto {
 	public static void main(String[] args) {
 		
 		Orcamento primeiro = new Orcamento(new BigDecimal("1000"), 1);
-		Orcamento segundo = new Orcamento(new BigDecimal("200"), 2);
+		Orcamento segundo = new Orcamento(new BigDecimal("200"), 6);
 		
 		CalculadoraDescontos calculadora = new CalculadoraDescontos();
 		
