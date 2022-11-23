@@ -7,16 +7,14 @@ import loja.imposto.ICMS;
 import loja.imposto.ISS;
 import loja.orcamento.Orcamento;
 
-public class TesteImpostos {
+public class TestesImpostos2 {
 
 	public static void main(String[] args) {
 		
 		Orcamento orcamento = new Orcamento(new BigDecimal("100"), 1);
-		Orcamento orcamento2 = new Orcamento(new BigDecimal("500"), 1);
 		CalculadoraImpostos calculadora = new CalculadoraImpostos();
 		
-		System.out.println(calculadora.calcular(orcamento, new ICMS(new ISS(null))));
-		System.out.println(calculadora.calcular(orcamento2, new ISS(null)));
+		System.out.println(calculadora.calcular(orcamento, new ISS(new ICMS(null))));
 	}
 
 }
